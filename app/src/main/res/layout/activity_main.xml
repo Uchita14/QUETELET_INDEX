@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#EB455F">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:id="@+id/msg"
+        android:textSize="20sp"
+        android:textColor="#FCFFE7"
+        ></TextView>
+
+    <EditText
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:ems="10"
+       android:textSize="25dp"
+       android:id="@+id/weight"
+       android:hint="Enter your weight (kg)"
+       android:textColorHint="#FCFFE7"
+       android:textColor="#FCFFE7"
+       android:inputType="numberDecimal"
+       android:layout_marginTop="100dp"
+       android:layout_centerHorizontal="true"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/height"
+        android:hint="Enter your height (m)"
+        android:textColorHint="#FCFFE7"
+        android:textColor="#FCFFE7"
+        android:inputType="numberDecimal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/weight"
+        android:textSize="25dp"
+        android:layout_marginTop="30dp"/>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radiogrp"
+        android:layout_below="@+id/height"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="85dp"
+        >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rb1"
+            android:checked="false"
+            android:textSize="25dp"
+            android:text="Male"
+            android:buttonTint="#2B3467"
+            android:textColor="#FCFFE7"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rb2"
+            android:checked="false"
+            android:text="Female"
+            android:textSize="25dp"
+            android:textColor="#FCFFE7"
+            android:buttonTint="#2B3467"/>
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/height"
+        android:text="CALCULATE"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="155dp"
+        android:id="@+id/btn"
+        android:backgroundTint="#10A19D"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn"
+        android:layout_marginTop="50dp"
+        android:padding="60dp"
+        android:gravity="left"
+        android:textSize="25dp"
+        android:id="@+id/result"
+        android:background="#F2921D"
+        android:text="Result: "
+        android:textColor="@color/black"
+        />
+
+
+</RelativeLayout>
+
+
+
